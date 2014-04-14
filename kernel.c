@@ -10,7 +10,7 @@ void kmain(void)
 	unsigned int i = 0;
 	unsigned int j = 0;
 	//clear all
-	while(j < 80 * 25) {
+	while(j < 80 * 25 * 2) {
 		vidptr[j] = ' '; //blank character
 		vidptr[j+1] = 0x07; //shows prev character should
 							 // be white on black screen
