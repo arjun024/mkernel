@@ -1,0 +1,4 @@
+menuentry 'myKernel' {
+	set root='hd0,msdos1'
+	multiboot /boot/kernel-7001 ro
+}

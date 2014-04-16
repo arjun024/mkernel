@@ -1,0 +1,3 @@
+title myKernel
+	root (hd0,0)
+	kernel /boot/kernel-701 ro
