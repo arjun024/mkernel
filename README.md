@@ -23,6 +23,11 @@ gcc -m32 -c kernel.c -o kc.o
 ld -m elf_i386 -T link.ld -o kernel kasm.o kc.o
 ```
 
+####Test on emulator####
+```
+qemu-system-i386 -kernel kernel
+```
+
 ####Get to boot####
 GRUB requires your kernel executable to be of the pattern `kernel-<version>`.
 
