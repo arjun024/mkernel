@@ -1,4 +1,4 @@
 menuentry 'myKernel' {
-	set root='hd0,msdos1'     ;the device of your /boot, such as hd0,sda1
+	set root='(hd0,msdos1)'     ;the device of your /boot, such as hd0,sda1
 	multiboot /kernel-7001 ro ;you should put this file in /boot
 }
