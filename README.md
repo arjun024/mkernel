@@ -1,7 +1,7 @@
 mkernel
 =======
 
-This is a minimalistic kernel which prints "`my first kernel`" on the screen and then hangs.
+This is a minimalist kernel which prints "`my first kernel`" on the screen and then hangs.
 
 * The kernel is Multiboot compliant and loads with GRUB.
 
