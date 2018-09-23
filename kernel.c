@@ -10,7 +10,7 @@ void kmain(void)
 	char *vidptr = (char*)0xb8000;
 	unsigned int i = 0;
 	unsigned int j = 0;
-	unsigned int screensize;
+	unsigned int screensize = 0; 
 
 	/* this loops clears the screen
 	* there are 25 lines each of 80 columns; each element takes 2 bytes */
