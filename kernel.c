@@ -19,8 +19,8 @@ void kmain(void)
 		/* blank character */
 		vidptr[j] = ' ';
 		/* attribute-byte */
-		vidptr[j++] = 0x07;
-		j = j + 2;
+		vidptr[j+1] = 0x07;
+		j+=2;
 	}
 
 	j = 0;
@@ -30,7 +30,7 @@ void kmain(void)
 		/* the character's ascii */
 		vidptr[i] = str[j];
 		/* attribute-byte: give character black bg and light grey fg */
-		vidptr[i++] = 0x07;
+		vidptr[i+1] = 0x07;
 	 	j++;
 		i += 2;
 	}
