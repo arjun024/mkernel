@@ -8,7 +8,6 @@ void kmain(void)
 	const char *str = "my first kernel";
 	/* video memory begins at address 0xb8000 */
 	char *vidptr = (char*)0xb8000;
-	unsigned int i = 0;
 	unsigned int j = 0;
 	unsigned int screensize;
 
@@ -28,11 +27,10 @@ void kmain(void)
 	/* this loop writes the string to video memory */
 	while (str[j] != '\0') {
 		/* the character's ascii */
-		vidptr[i] = str[j];
+		vidptr[j*2] = str[j];
 		/* attribute-byte: give character black bg and light grey fg */
-		vidptr[i+1] = 0x07;
-		++j;
-		i = i + 2;
+		vidptr[j*2+1] = 0x07;
+		j++;
 	}
 
 	return;
